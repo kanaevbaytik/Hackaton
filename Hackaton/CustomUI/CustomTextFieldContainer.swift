@@ -10,10 +10,10 @@ import UIKit
 
 class CustomTextFieldContainer: UIView {
     
-    private var textFields: [(CustomTextField, String)] // Теперь массив из кортежей
+    private var textFields: [(CustomTextField, String)]
     private var stackView: UIStackView!
 
-    init(textFields: [(CustomTextField, String)]) { // Принимаем (текстовое поле, тайтл)
+    init(textFields: [(CustomTextField, String)]) { 
         self.textFields = textFields
         super.init(frame: .zero)
         setupView()
@@ -79,3 +79,4 @@ class CustomTextFieldContainer: UIView {
         return container
     }
 }
+

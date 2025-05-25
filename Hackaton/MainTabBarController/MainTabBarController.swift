@@ -18,19 +18,18 @@ class MainTabBarController: UITabBarController {
     private func setupTabBar() {
         
         let homeVC = UINavigationController(rootViewController: HomeViewController())
-        let searchVC = UINavigationController(rootViewController: SearchViewController())
-        let centerVC = UINavigationController(rootViewController: CenterViewController())
-        let notificationsVC = UINavigationController(rootViewController: NotificationsViewController())
+        let centerVC = UINavigationController(rootViewController: InputScreenViewController())
         let profileVC = UINavigationController(rootViewController: ProfileViewController())
         
         homeVC.tabBarItem = UITabBarItem(title: "Главное", image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
-        searchVC.tabBarItem = UITabBarItem(title: "Чат", image: UIImage(systemName: "message"), selectedImage: UIImage(systemName: "message.fill"))
         centerVC.tabBarItem = UITabBarItem(title: "", image: nil, selectedImage: nil)
-        notificationsVC.tabBarItem = UITabBarItem(title: "Уведомления", image: UIImage(systemName: "bell"), selectedImage: UIImage(systemName: "bell.fill"))
-        profileVC.tabBarItem = UITabBarItem(title: "Профиль", image: UIImage(systemName: "person"), selectedImage: UIImage(systemName: "person.fill"))
+        profileVC.tabBarItem = UITabBarItem(title: "Маалымат", image: UIImage(systemName: "questionmark.circle"), selectedImage: UIImage(systemName: "questionmark.circle"))
         
-        self.viewControllers = [homeVC, searchVC, centerVC, notificationsVC, profileVC]
+        self.viewControllers = [homeVC, centerVC, profileVC]
         
+        tabBar.tintColor = UIColor(hex: "#50577AFF")
+//        tabBar.tintColor = UIColor(hex: "#AEA1E5FF")
+        tabBar.unselectedItemTintColor = UIColor(hex: "#A0A4B8FF")
         tabBar.tintColor = UIColor(hex: "#AEA1E5FF")
         
         setupMiddleButton()
@@ -40,7 +39,8 @@ class MainTabBarController: UITabBarController {
         let middleButton = UIButton()
         middleButton.translatesAutoresizingMaskIntoConstraints = false
         middleButton.setImage(UIImage(systemName: "plus"), for: .normal)
-        middleButton.backgroundColor = UIColor(hex: "#56549EFF")
+//        middleButton.backgroundColor = UIColor(hex: "#56549EFF")
+        middleButton.backgroundColor = UIColor(hex: "#6C63FFFF")
         middleButton.tintColor = .white
         middleButton.layer.cornerRadius = 20
         middleButton.layer.shadowColor = UIColor.black.cgColor
@@ -61,9 +61,10 @@ class MainTabBarController: UITabBarController {
     
     @objc private func middleButtonTapped() {
         print("нажата кнопка +")
-        let createLotVC = CreateLotPageViewController(viewModel: CreateLotViewModel())
-        let navController = UINavigationController(rootViewController: createLotVC)
-        navController.modalPresentationStyle = .fullScreen
-        present(navController, animated: true, completion: nil)
+        
+        if let selectedNav = self.selectedViewController as? UINavigationController {
+            let inputVC = InputScreenViewController()
+            selectedNav.pushViewController(inputVC, animated: true)
+        }
     }
 }

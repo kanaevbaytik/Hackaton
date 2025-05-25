@@ -70,8 +70,8 @@ class CustomTextField: UITextField {
         
         gradientLayer = CAGradientLayer()
         gradientLayer?.colors = [
-            UIColor(hex: "#EDEBFAFF")!.cgColor,
-            UIColor(hex: "#F8F7FFFF")!.cgColor
+            UIColor(hex: "#EDEBFAFF").cgColor,
+            UIColor(hex: "#F8F7FFFF").cgColor
         ]
         gradientLayer?.locations = [0, 1]
         gradientLayer?.startPoint = CGPoint(x: 0.0, y: 1.0)
@@ -84,7 +84,7 @@ class CustomTextField: UITextField {
     }
     
     @objc private func editingDidBegin() {
-        animateBorder(color: UIColor(hex: "#56549EFF")!, width: 1.5)
+        animateBorder(color: UIColor(hex: "#56549EFF"), width: 1.5)
     }
     
     @objc private func editingDidEnd() {

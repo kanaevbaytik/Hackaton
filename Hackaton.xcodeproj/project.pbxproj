@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE3931DA2DDF2E5900B63E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3931D32DDF2E5900B63E13 /* Assets.xcassets */; };
 		CE3931DC2DDF2E5900B63E13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3931D62DDF2E5900B63E13 /* LaunchScreen.storyboard */; };
 		CE3931DD2DDF2E5900B63E13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3931D22DDF2E5900B63E13 /* AppDelegate.swift */; };
 		CE3931DE2DDF2E5900B63E13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3931D72DDF2E5900B63E13 /* SceneDelegate.swift */; };
 		CE3931E22DDF3EDF00B63E13 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3931E12DDF3EDF00B63E13 /* MainTabBarController.swift */; };
 		CE3931E42DDF3EFE00B63E13 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3931E32DDF3EFE00B63E13 /* HomeViewController.swift */; };
-		CE3931E62DDF3F4700B63E13 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3931E52DDF3F4700B63E13 /* SearchViewController.swift */; };
 		CE3931EA2DDF3F6400B63E13 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3931E92DDF3F6400B63E13 /* NotificationsViewController.swift */; };
 		CE3931EC2DDF3F6F00B63E13 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3931EB2DDF3F6F00B63E13 /* ProfileViewController.swift */; };
 		CE3931EF2DDF713D00B63E13 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3931EE2DDF713D00B63E13 /* UIColor.swift */; };
@@ -44,19 +42,23 @@
 		CE39323A2DDF89EC00B63E13 /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3932392DDF89EC00B63E13 /* TokenStorage.swift */; };
 		CE39323D2DDF8AE600B63E13 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39323C2DDF8AE600B63E13 /* Models.swift */; };
 		CE39323F2DDF97DC00B63E13 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39323E2DDF97DC00B63E13 /* String.swift */; };
-		CE3932422DDF9AD600B63E13 /* AuthConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3932412DDF9AD600B63E13 /* AuthConstants.swift */; };
+		CE3932472DE0ED2600B63E13 /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3932462DE0ED2600B63E13 /* ViewManager.swift */; };
+		CE3932482DE0ED2600B63E13 /* ViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3932452DE0ED2600B63E13 /* ViewService.swift */; };
+		CE3932502DE1CDE600B63E13 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39324F2DE1CDE600B63E13 /* CardDetailViewController.swift */; };
+		CE3932522DE222B900B63E13 /* InputScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3932512DE222B900B63E13 /* InputScreenViewController.swift */; };
+		CE3932562DE222F200B63E13 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3932552DE222F200B63E13 /* Model.swift */; };
+		CEE93F3A2DE270530038CD5A /* TextSenderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE93F392DE270530038CD5A /* TextSenderService.swift */; };
+		CEE93F3C2DE28ADA0038CD5A /* Assets 2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE93F3B2DE28ADA0038CD5A /* Assets 2.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE3931BA2DDF2D0300B63E13 /* Hackaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3931D22DDF2E5900B63E13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE3931D32DDF2E5900B63E13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE3931D42DDF2E5900B63E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE3931D52DDF2E5900B63E13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE3931D72DDF2E5900B63E13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE3931E12DDF3EDF00B63E13 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		CE3931E32DDF3EFE00B63E13 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		CE3931E52DDF3F4700B63E13 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		CE3931E92DDF3F6400B63E13 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		CE3931EB2DDF3F6F00B63E13 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CE3931EE2DDF713D00B63E13 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -87,7 +89,13 @@
 		CE3932392DDF89EC00B63E13 /* TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorage.swift; sourceTree = "<group>"; };
 		CE39323C2DDF8AE600B63E13 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		CE39323E2DDF97DC00B63E13 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		CE3932412DDF9AD600B63E13 /* AuthConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConstants.swift; sourceTree = "<group>"; };
+		CE3932452DE0ED2600B63E13 /* ViewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewService.swift; sourceTree = "<group>"; };
+		CE3932462DE0ED2600B63E13 /* ViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
+		CE39324F2DE1CDE600B63E13 /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		CE3932512DE222B900B63E13 /* InputScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputScreenViewController.swift; sourceTree = "<group>"; };
+		CE3932552DE222F200B63E13 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		CEE93F392DE270530038CD5A /* TextSenderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSenderService.swift; sourceTree = "<group>"; };
+		CEE93F3B2DE28ADA0038CD5A /* Assets 2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets 2.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,8 +299,8 @@
 		CE3932232DDF761800B63E13 /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				CE3931E32DDF3EFE00B63E13 /* HomeViewController.swift */,
-				CE3931E52DDF3F4700B63E13 /* SearchViewController.swift */,
+				CE3932492DE1A28600B63E13 /* Chat */,
+				CE3932432DE0ECFB00B63E13 /* Home */,
 				CE3931E92DDF3F6400B63E13 /* NotificationsViewController.swift */,
 				CE3931EB2DDF3F6F00B63E13 /* ProfileViewController.swift */,
 				CE39320B2DDF720D00B63E13 /* AddLot */,
@@ -358,10 +366,46 @@
 		CE3932402DDF9AC100B63E13 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				CE3931D32DDF2E5900B63E13 /* Assets.xcassets */,
-				CE3932412DDF9AD600B63E13 /* AuthConstants.swift */,
+				CEE93F3B2DE28ADA0038CD5A /* Assets 2.xcassets */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		CE3932432DE0ECFB00B63E13 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CE3932442DE0ED1A00B63E13 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CE3932442DE0ED1A00B63E13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE39324E2DE1CDD200B63E13 /* ViewDocs */,
+				CE3932452DE0ED2600B63E13 /* ViewService.swift */,
+				CE3932462DE0ED2600B63E13 /* ViewManager.swift */,
+				CE3931E32DDF3EFE00B63E13 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE3932492DE1A28600B63E13 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				CE3932512DE222B900B63E13 /* InputScreenViewController.swift */,
+				CE3932552DE222F200B63E13 /* Model.swift */,
+				CEE93F392DE270530038CD5A /* TextSenderService.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		CE39324E2DE1CDD200B63E13 /* ViewDocs */ = {
+			isa = PBXGroup;
+			children = (
+				CE39324F2DE1CDE600B63E13 /* CardDetailViewController.swift */,
+			);
+			path = ViewDocs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,7 +469,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE3931DA2DDF2E5900B63E13 /* Assets.xcassets in Resources */,
+				CEE93F3C2DE28ADA0038CD5A /* Assets 2.xcassets in Resources */,
 				CE3931DC2DDF2E5900B63E13 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,7 +481,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE3931E62DDF3F4700B63E13 /* SearchViewController.swift in Sources */,
 				CE3932362DDF897700B63E13 /* NetworkError.swift in Sources */,
 				CE3931E42DDF3EFE00B63E13 /* HomeViewController.swift in Sources */,
 				CE3931DD2DDF2E5900B63E13 /* AppDelegate.swift in Sources */,
@@ -446,7 +489,7 @@
 				CE3931EC2DDF3F6F00B63E13 /* ProfileViewController.swift in Sources */,
 				CE39320C2DDF720D00B63E13 /* UploadPhotoContainer.swift in Sources */,
 				CE39320D2DDF720D00B63E13 /* UploadedPhotosContainer.swift in Sources */,
-				CE3932422DDF9AD600B63E13 /* AuthConstants.swift in Sources */,
+				CE3932502DE1CDE600B63E13 /* CardDetailViewController.swift in Sources */,
 				CE39320E2DDF720D00B63E13 /* DescriptionViewController.swift in Sources */,
 				CE39322F2DDF7E9100B63E13 /* CenterViewController.swift in Sources */,
 				CE39320F2DDF720D00B63E13 /* SetPriceViewController.swift in Sources */,
@@ -459,10 +502,15 @@
 				CE39322B2DDF7DAA00B63E13 /* RegViewController.swift in Sources */,
 				CE3932202DDF72D400B63E13 /* CustomButton.swift in Sources */,
 				CE3932142DDF720D00B63E13 /* CreateLotViewModel.swift in Sources */,
+				CE3932522DE222B900B63E13 /* InputScreenViewController.swift in Sources */,
+				CE3932472DE0ED2600B63E13 /* ViewManager.swift in Sources */,
+				CEE93F3A2DE270530038CD5A /* TextSenderService.swift in Sources */,
+				CE3932482DE0ED2600B63E13 /* ViewService.swift in Sources */,
 				CE3932152DDF720D00B63E13 /* StepProgressView.swift in Sources */,
 				CE3932162DDF720D00B63E13 /* EnterLotDetailsViewController.swift in Sources */,
 				CE3932172DDF720D00B63E13 /* SuccessContainerView.swift in Sources */,
 				CE3932182DDF720D00B63E13 /* DatePickerInputView.swift in Sources */,
+				CE3932562DE222F200B63E13 /* Model.swift in Sources */,
 				CE39323A2DDF89EC00B63E13 /* TokenStorage.swift in Sources */,
 				CE3932222DDF731100B63E13 /* UIView.swift in Sources */,
 				CE3932382DDF898C00B63E13 /* AuthService.swift in Sources */,
